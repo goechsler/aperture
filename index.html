@@ -86,9 +86,9 @@ body {
   }
   angleChange();
 
-//  angle.addEventListener("change", angleChange);
-//  angle.addEventListener("mousemove", angleChange);
-  angle.addEventListener("mousemove", angleChange);
+  // angle.addEventListener("change", angleChange);
+  // angle.addEventListener("mousemove", angleChange);
+  angle.addEventListener("input", angleChange);
 
   document.getElementById("transparent").addEventListener("change", function(){
     stone.css("fill-opacity", this.checked?.5:1);
