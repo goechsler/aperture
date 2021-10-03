@@ -9,13 +9,6 @@ body {
   background-color: white;
   font: lighter 1em system-ui;
 }
-#_doc {
-  width: 50%;
-}
-#_doc svg {
-  width: 100%;
-  height: 100%;
-}
 
 </style>
 </head>
@@ -32,8 +25,8 @@ body {
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:svg="http://www.w3.org/2000/svg"
      xmlns="http://www.w3.org/2000/svg"
-     width="100%"
-     height="100%"
+     width="80%"
+     height="80%"
      viewBox="0 0 128.39837 127.86713"
      version="1.1"
      id="svg8">
@@ -93,7 +86,8 @@ body {
   }
   angleChange();
 
-  angle.addEventListener("change", angleChange);
+//  angle.addEventListener("change", angleChange);
+//  angle.addEventListener("mousemove", angleChange);
   angle.addEventListener("mousemove", angleChange);
 
   document.getElementById("transparent").addEventListener("change", function(){
