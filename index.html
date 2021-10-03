@@ -5,14 +5,14 @@
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  #overflow: hidden;
   background-color: white;
   font: lighter 1em system-ui;
 }
-#doc {
+#_doc {
   width: 50%;
 }
-#doc svg {
+#_doc svg {
   width: 100%;
   height: 100%;
 }
@@ -21,15 +21,19 @@ body {
 </head>
 <body>
 <div id=doc">
-  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <div><input type="range" min="0" max="64" step="1" value="16" id="angle" style="width:90%" /></div>
+<div>
+  <input type="checkbox" id="transparent" name="transparent">
+<label for="transparent"> transparent</label>
+</div>
   <svg
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:svg="http://www.w3.org/2000/svg"
      xmlns="http://www.w3.org/2000/svg"
-     width="128.39836mm"
-     height="127.86713mm"
+     width="100%"
+     height="100%"
      viewBox="0 0 128.39837 127.86713"
      version="1.1"
      id="svg8">
@@ -67,12 +71,6 @@ body {
        d="M 0,5.0943529e-6 V 127.86713 H 128.39836 V 5.0943529e-6 Z M 64.199181,36.556946 A 27.376569,27.376569 0 0 1 91.575805,63.933571 27.376569,27.376569 0 0 1 64.199181,91.310193 27.376569,27.376569 0 0 1 36.822559,63.933571 27.376569,27.376569 0 0 1 64.199181,36.556946 Z"
        style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.03453803;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       </svg>
-</div>
-
-<div><input type="range" min="0" max="64" step="1" value="16" id="angle" style="width:90%" /></div>
-<div>
-  <input type="checkbox" id="transparent" name="transparent">
-<label for="transparent"> transparent</label>
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js" integrity="sha512-p3Tp2zn+wApBreZCgRkmMwnfpN8MUPXzzOihXx7iGYXqE7t6m9drY8HeyMeeFuDWiTFKrGUrq3jpbT0vX6zY/Q==" crossorigin="anonymous"></script>
